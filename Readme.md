@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Elena](https://up.htmlacademy.ru/htmlcss/26/user/1138493).
-* Наставник: `Неизвестно`.
+* Наставник: [Dmitriy Polos](https://htmlacademy.ru/profile/id356759).
 
 ---
 

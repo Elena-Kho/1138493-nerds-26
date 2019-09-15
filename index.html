@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <!--Дима, зачти, пожалуйста, доп. часть, все сделано-->
@@ -21,9 +22,9 @@
       </nav>
     </header>
     <main>
-      <h1>Дизайн-студия «Нёрдс»</h1>
+      <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества дизайн-студии «Нёрдс»</h2>
         <div>
           <p>
             <img src="img/slide1-698x413.png" width="698" height="413" alt="Слайдер. Изображение 1">
@@ -39,7 +40,7 @@
       </div>
       </section>
       <section>
-        <h2>Продукты</h2>
+        <h2 class="visually-hidden">Продукция дизайн-студии «Нёрдс»</h2>
         <ul>
           <li>
             <h3>Веб-сайты</h3>
@@ -69,7 +70,7 @@
       </section>
       <hr>
       <section>
-        <h2>О дизайн-студии «Нёрдс»</h2>
+        <h2 class="visually-hidden">О дизайн-студии «Нёрдс»</h2>
         <p>
           Мы - маленькая, но гордая дизайн-студия из Краснодара.
         </p>
@@ -145,9 +146,9 @@
     </main>
     <footer>
       <ul>
-        <li><a href="#">ВК</a></li>
-        <li><a href="#">ФБ</a></li>
-        <li><a href="#">И</a></li>
+        <li><a href="#" aria-label="«Нёрдс» во ВКонтакте">ВК</a></li>
+        <li><a href="#" aria-label="«Нёрдс» в Фейсбуке">ФБ</a></li>
+        <li><a href="#" aria-label="«Нёрдс» в Инстаграм">И</a></li>
       </ul>
       <p>
         <span>Давайте дружить, это выгодно!</span>
@@ -155,10 +156,34 @@
       </p>
     </footer>
     <section>
-      <h2>Форма обратной связи</h2>
-      <p>Комментарии по форме обратной связи</p>
-      <!--Форма обратной связи-->
+      <h2>Напишите нам</h2>
+      <form class="" action="#" method="get">
+        <ul>
+          <li>
+            <p>
+              <label>Ваше имя:
+                <input type="text" name="name" value="" placeholder="Имя Фамилия">
+              </label>
+            </p>
+          </li>
+          <li>
+            <p>
+              <label>Ваш e-mail:
+                <input type="email" name="email" value="" placeholder="email@example.com">
+              </label>
+            </p>
+          </li>
+          <li>
+            <p>
+              <label>Текст письма:
+                <textarea name="message" rows="5" cols="20">В свободной форме</textarea>
+              </label>
+            </p>
+          </li>
+        </ul>
       <button type="submit">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть">X</button>
     </section>
   </body>
 </html>

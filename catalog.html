@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
@@ -22,26 +23,75 @@
     <main>
       <h1>Магазин готовых шаблонов</h1>
       <section>
-        <p>Сортировать:</p>
+        <h2 class="visually-hidden">Диапазон стоимости и сортировка</h2>
+        <div>
+          <h3>Сортировать:</h3>
           <ul>
-            <li><a href="">По цене</a></li>
-            <li><a href="">По типу</a></li>
-            <li><a href="">По названию</a></li>
+            <li><a href="" aria-label="По цене">По цене</a></li>
+            <li><a href="" aria-label="По типу">По типу</a></li>
+            <li><a href="" aria-label="По названию">По названию</a></li>
+            <li><a href="" aria-label="По убыванию">По убыванию</a></li>
+            <li><a href="" aria-label="По возрастанию">По возрастанию</a></li>
           </ul>
+        </div>
+        <div>
+          <h3>Стоимость:</h3>
+          <input type="range" min="0" max="1500" step="100">
+          <p>
+            от <span>0</span> до <span>15 000</span>
+          </p>
+        </div>
       </section>
       <section>
-        <p>Стоимость:</p>
-        <input type="range" min="0" max="1500" step="100">
-        <p>
-          от <span>0</span> до <span>15 000</span>
-        </p>
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form class="" action="#" method="get">
+          <fieldset>
+            <legend>Cетка:</legend>
+            <ul>
+              <li>
+                <input id="filter-adaptive" type="radio" name="grid" value="adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input id="filter-static" type="radio" name="grid" value="static">
+                <label for="filter-static">Фиксированная</label>
+              </li>
+              <li>
+                <input id="filter-liquid" type="radio" name="grid" value="liquid">
+                <label for="filter-liquid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input id="filter-slider" type="checkbox" name="slider" value="" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input id="filter-advantages" type="checkbox" name="advantages" value="">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <input id="filter-news" type="checkbox" name="news" value="" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input id="filter-gallery" type="checkbox" name="gallery" value="">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li>
+                <input id="filter-recycle" type="checkbox" name="recycle" value="">
+                <label for="filter-recycle">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+        <button type="submit" name="button">Показать</button>
+        </form>
       </section>
       <section>
-        <h2>Фильтр по функциональности</h2>
-        <!-- Здесь будет форма -->
-      </section>
-      <section>
-        <h2>Галерея шаблонов</h2>
+        <h2 class="visually-hidden">Галерея шаблонов</h2>
         <ul>
           <li>
             <h3>
@@ -142,9 +192,9 @@
     </main>
     <footer>
       <ul>
-        <li><a href="#">ВК</a></li>
-        <li><a href="#">ФБ</a></li>
-        <li><a href="#">И</a></li>
+        <li><a href="#" aria-label="«Нёрдс» во ВКонтакте">ВК</a></li>
+        <li><a href="#" aria-label="«Нёрдс» в Фейсбуке">ФБ</a></li>
+        <li><a href="#" aria-label="«Нёрдс» в Инстаграм">И</a></li>
       </ul>
       <p>
         <span>Давайте дружить, это выгодно!</span>
@@ -152,10 +202,34 @@
       </p>
     </footer>
     <section>
-      <h2>Форма обратной связи</h2>
-      <p>Комментарии по форме обратной связи</p>
-      <!--Форма обратной связи-->
+      <h2>Напишите нам</h2>
+      <form class="" action="#" method="get">
+        <ul>
+          <li>
+            <p>
+              <label>Ваше имя:
+                <input type="text" name="name" value="" placeholder="Имя Фамилия">
+              </label>
+            </p>
+          </li>
+          <li>
+            <p>
+              <label>Ваш e-mail:
+                <input type="email" name="email" value="" placeholder="email@example.com">
+              </label>
+            </p>
+          </li>
+          <li>
+            <p>
+              <label>Текст письма:
+                <textarea name="message" rows="5" cols="20">В свободной форме</textarea>
+              </label>
+            </p>
+          </li>
+        </ul>
       <button type="submit">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть">X</button>
     </section>
   </body>
 </html>

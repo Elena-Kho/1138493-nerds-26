@@ -8,7 +8,7 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">
+        <a href="index.html" aria-label="Переход на главную страницу">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul>
@@ -23,28 +23,20 @@
     <main>
       <h1>Магазин готовых шаблонов</h1>
       <section>
-        <h2 class="visually-hidden">Диапазон стоимости и сортировка</h2>
-        <div>
-          <h3>Сортировать:</h3>
-          <ul>
-            <li><a href="" aria-label="По цене">По цене</a></li>
-            <li><a href="" aria-label="По типу">По типу</a></li>
-            <li><a href="" aria-label="По названию">По названию</a></li>
-            <li><a href="" aria-label="По убыванию">По убыванию</a></li>
-            <li><a href="" aria-label="По возрастанию">По возрастанию</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Стоимость:</h3>
-          <input type="range" min="0" max="1500" step="100">
-          <p>
-            от <span>0</span> до <span>15 000</span>
-          </p>
-        </div>
-      </section>
-      <section>
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="" action="#" method="get">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" min="0" max="1500" step="100"><br>
+            <label>
+              От
+              <input type="text" name="from">
+            </label>
+            <label>
+              До
+              <input type="text" name="to">
+            </label>
+          </fieldset>
           <fieldset>
             <legend>Cетка:</legend>
             <ul>
@@ -87,8 +79,18 @@
               </li>
             </ul>
           </fieldset>
-        <button type="submit" name="button">Показать</button>
+        <button type="submit">Показать</button>
         </form>
+      </section>
+      <section>
+        <h2>Сортировать:</h2>
+        <ul>
+          <li><a href="">По цене</a></li>
+          <li><a href="">По типу</a></li>
+          <li><a href="">По названию</a></li>
+          <li><a href="" aria-label="По убыванию">По убыванию</a></li>
+          <li><a href="" aria-label="По возрастанию">По возрастанию</a></li>
+        </ul>
       </section>
       <section>
         <h2 class="visually-hidden">Галерея шаблонов</h2>
@@ -185,7 +187,7 @@
           ул. Б. Конюшенная, д. 19/8
         </p>
         <p>
-          тел. +7(812)275-75-75
+          тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
         </p>
         <button type="button">Напишите нам</button>
       </section>
@@ -203,31 +205,23 @@
     </footer>
     <section>
       <h2>Напишите нам</h2>
-      <form class="" action="#" method="get">
-        <ul>
-          <li>
-            <p>
-              <label>Ваше имя:
-                <input type="text" name="name" value="" placeholder="Имя Фамилия">
-              </label>
-            </p>
-          </li>
-          <li>
-            <p>
-              <label>Ваш e-mail:
-                <input type="email" name="email" value="" placeholder="email@example.com">
-              </label>
-            </p>
-          </li>
-          <li>
-            <p>
-              <label>Текст письма:
-                <textarea name="message" rows="5" cols="20">В свободной форме</textarea>
-              </label>
-            </p>
-          </li>
-        </ul>
-      <button type="submit">Отправить</button>
+      <form class="" action="#" method="post">
+        <p>
+          <label>Ваше имя:
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>Ваш e-mail:
+            <input type="email" name="email" value="" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <textarea name="message" rows="5" cols="20">В свободной форме</textarea>
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
       </form>
       <button type="button" aria-label="Закрыть">X</button>
     </section>

@@ -101,22 +101,22 @@
       <hr>
       <ul>
         <li>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт HTMLAcademy">
             <img src="img/logo-1-199x68.png" width="199" height="68" alt="Логотип HTMLAcademy">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Переход на сайт Барбершопа Бородинский">
             <img src="img/logo-2-209x87.png" width="209" height="87" alt="Логотип Барбершопа Бородинский">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Переход на сайт Пинк">
             <img src="img/logo-3-185x52.png" width="185" height="52" alt="Логотип Пинк">
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" aria-label="Переход на сайт Мишка">
             <img src="img/logo-4-173x84.png" width="173" height="84" alt="Лого Мишка">
           </a>
         </li>
@@ -138,7 +138,7 @@
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p>
-            тел. +7(812) 275-75-75
+            тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
           <button type="button">Напишите нам</button>
         </div>
@@ -157,31 +157,23 @@
     </footer>
     <section>
       <h2>Напишите нам</h2>
-      <form class="" action="#" method="get">
-        <ul>
-          <li>
-            <p>
-              <label>Ваше имя:
-                <input type="text" name="name" value="" placeholder="Имя Фамилия">
-              </label>
-            </p>
-          </li>
-          <li>
-            <p>
-              <label>Ваш e-mail:
-                <input type="email" name="email" value="" placeholder="email@example.com">
-              </label>
-            </p>
-          </li>
-          <li>
-            <p>
-              <label>Текст письма:
-                <textarea name="message" rows="5" cols="20">В свободной форме</textarea>
-              </label>
-            </p>
-          </li>
-        </ul>
-      <button type="submit">Отправить</button>
+      <form class="" action="#" method="post">
+        <p>
+          <label>Ваше имя:
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>Ваш e-mail:
+            <input type="email" name="email" value="" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <textarea name="message" rows="5" cols="20">В свободной форме</textarea>
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
       </form>
       <button type="button" aria-label="Закрыть">X</button>
     </section>

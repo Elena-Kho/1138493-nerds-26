@@ -2,23 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
-  <!--Дима, зачти, пожалуйста, доп. часть по формам, все было сделано сразу-->
   <body>
     <header>
-      <nav>
-        <a>
+      <nav class="main-navigation">
+        <a class="logo">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <a href="#">Корзина</a>
+        <ul class="recycle">
+          <li>
+            <a class="recycle" href="#">Корзина</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -39,32 +44,32 @@
           <a href="#">Узнать больше</a>
       </div>
       </section>
-      <section>
+      <section class="products">
         <h2 class="visually-hidden">Продукция дизайн-студии «Нёрдс»</h2>
-        <ul>
-          <li>
+        <ul class="products-list">
+          <li class="websites">
             <h3>Веб-сайты</h3>
             <p>
               Мир никогда не будет прежним
               после того как увидит ваш сайт!
             </p>
-            <a href="#">Заказать</a>
+            <a class="websites-button" href="#">Заказать</a>
           </li>
-          <li>
+          <li class="apps">
             <h3>Приложения</h3>
             <p>
               Покорите топ-10 приложений в
               AppStore и Google Play
             </p>
-            <a href="#">Заказать</a>
+            <a class="apps-button" href="#">Заказать</a>
           </li>
-          <li>
+          <li class="presentations">
             <h3>Презентации</h3>
             <p>
               Вы даже не подозреваете,
               насколько вы изумительны!
             </p>
-            <a href="#">Заказать</a>
+            <a class="presentations-button" href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -144,13 +149,13 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <ul>
         <li><a href="#" aria-label="«Нёрдс» во ВКонтакте">ВК</a></li>
         <li><a href="#" aria-label="«Нёрдс» в Фейсбуке">ФБ</a></li>
         <li><a href="#" aria-label="«Нёрдс» в Инстаграм">И</a></li>
       </ul>
-      <p>
+      <p class="footer-slogan">
         <span>Давайте дружить, это выгодно!</span>
         Скидка 10% для друзей из социальных сетей.
       </p>

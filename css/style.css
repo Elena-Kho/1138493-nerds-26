@@ -43,7 +43,7 @@ a {
   opacity: 0.5;
 }
 
-.current {
+.current a {
   text-decoration: underline;
   text-decoration-color: #fb565a;
 
@@ -135,14 +135,14 @@ a {
 .filter-grid input:focus + label,
 .filter-features input:hover + label,
 .filter-features input:focus + label {
-  color: red;
+  color: #283136;
 }
 
 .filter-grid input:disabled + label,
 .filter-features  input:disabled + label {
   color: #283136;
 
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .filter-button {
@@ -197,6 +197,15 @@ a {
   color: #000000;
 }
 
+.gallery-title:hover {
+  color: #fb565a;
+}
+
+.gallery-title:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
 .gallery-description {
   font-size: 16px;
   line-height: 18px;
@@ -213,6 +222,14 @@ a {
   vertical-align: middle;
   color: #ffffff;
   background-color: #fb565a;
+}
+
+.gallery-price:hover {
+  background-color: #e74246;
+}
+
+.gallery-price:active {
+  background-color: #d7373b;
 }
 
 .main-footer p {

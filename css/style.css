@@ -15,7 +15,7 @@ a {
 
 .main-navigation {
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 
@@ -46,8 +46,48 @@ a {
 .current a {
   text-decoration: underline;
   text-decoration-color: #fb565a;
+}
 
-  }
+/*Слайдеры */
+
+.slider {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+}
+
+.slider .slider-slogan {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.slider .slider-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.slider .slider-button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+
+  background-color: #fb565a;
+}
+
+.slider .slider-button:hover {
+  background-color: #e74246;
+}
+
+.slider .slider-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
 
 .products-list {
   list-style: none;
@@ -102,7 +142,59 @@ a {
 .presentations-button:active {
   background-color: #e5a722;
 }
-/*Каталог*/
+
+/*О дизайн-студии «Нёрдс»*/
+
+.studio-title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.studio-text {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #283136;
+}
+
+.studio-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.studio-products {
+  list-style: none;
+}
+
+.studio-products li {
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #283136;
+}
+
+.studio-products span {
+  color: #d7373b;
+}
+
+.studio-text dt {
+  font-size: 45px;
+  line-height: 10.06px;
+
+  color: #000000;
+}
+
+.studio-text span {
+  font-size: 24px;
+  line-height: 10px;
+}
+
+/*Catalog.html*/
 .page-title {
   font-size: 55px;
   line-height: 55px;
@@ -118,7 +210,7 @@ a {
 
 .filter legend {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
@@ -130,6 +222,32 @@ a {
     color: #283136;
     list-style: none;
 }
+
+.filter-price .range {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #eeeeee;
+  border: none;
+}
+
+
+.filter-price label {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.filter-price input {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #283136;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #eeeeee;
+  border: none;
+  }
 
 .filter-grid input:hover + label,
 .filter-grid input:focus + label,
@@ -150,7 +268,7 @@ a {
   height: 50px;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -161,7 +279,7 @@ a {
 .filter-button:hover {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -172,12 +290,45 @@ a {
 .filter-button:active {
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   border: none;
   background-color: #d5d5d5;
+}
+
+.sort h2 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a:hover {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .gallery ul {
@@ -191,7 +342,7 @@ a {
 .gallery-title {
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 
   color: #000000;
@@ -232,6 +383,75 @@ a {
   background-color: #d7373b;
 }
 
+/*Пагинация*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover{
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+/*Контактная информация*/
+
+.contacts-text {
+  background-color: #ffffff;
+}
+
+.contacts-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts-address {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  }
+
+  .contacts-address a {
+    text-decoration: none;
+    color: #666666;
+  }
+
+  .contacts-button {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #fb565a;
+    border: none;
+  }
+
+
+
 .main-footer p {
   font-size: 16px;
   line-height: 22px;
@@ -240,7 +460,7 @@ a {
 
 .main-footer span {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 36px;
   color: #000000;
 }
@@ -264,6 +484,71 @@ a {
   border-radius: 50%;
 }
 
+/*Напишите нам*/
+
+.modal {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.write-us label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.write-us input {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+  background-color: #ffffff;
+  border: 2px solid  #d7dcde;
+}
+
+.write-us input:active {
+  border: none;
+}
+
+.write-us input:hover {
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.5);
+  background-color: #ffffff;
+  border: 2px solid  #b4b9bb;
+}
+
+.write-us input:focus {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid  #000000;
+}
+
+.write-us input:invalid {
+  font-size: 16px;
+  line-height: 18px;
+  color: #e74246;
+  background-color: #ffffff;
+  border: 2px solid  #e74246;
+}
+
+.write-us .button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+}
 
 
 
@@ -274,7 +559,7 @@ a {
 
 
 
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -285,4 +570,3 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/

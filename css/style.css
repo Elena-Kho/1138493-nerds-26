@@ -7,6 +7,9 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
+}
+
+.main-page {
   background: url("../img/nerds-index.jpg") no-repeat 0 0;
 }
 
@@ -299,6 +302,7 @@ a {
 }
 
 /*Catalog.html*/
+
 .page-title {
   font-size: 55px;
   line-height: 55px;
@@ -631,7 +635,7 @@ a {
 }
 
 /*Напишите нам*/
-
+/*
 .modal {
   color: #000000;
   background-color: #ffffff;
@@ -695,7 +699,7 @@ a {
   background-color: #fb565a;
   border: none;
 }
-
+*/
 
 
 

@@ -7,6 +7,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #283136;
+  background: url("../img/nerds-index.jpg") no-repeat 0 0;
 }
 
 a {
@@ -14,18 +15,55 @@ a {
 }
 
 .main-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
+
 }
 
-.site-navigation,
-.recycle {
+.logo {
+  width: 160px;
+  height: 65px;
+  margin-top: 50px;
+  margin-left: 140px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin-top: 75px;
+  margin-left: 200px;
+}
+
+.site-navigation {
+  min-width: 450px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
+
+.site-navigation li {
+  display: inline;
+  margin-right: 43px;
+}
+
+.recycle {
+  width: 150px;
+  margin: 0px;
+  padding-left: 75px;
+
+  list-style: none;
+}
+
 
 .site-navigation a,
 .recycle a {
@@ -51,9 +89,24 @@ a {
 /*Слайдеры */
 
 .slider {
+  display: flex;
   margin: 0;
   padding: 0;
-  background-color: #eeeeee;
+
+  /*background-color: #eeeeee;*/
+
+}
+
+.slider-description {
+  margin-left: 140px;
+
+  order: -1;
+
+}
+
+.slider-img {
+  margin-left: 55px;
+
 }
 
 .slider .slider-slogan {
@@ -89,8 +142,23 @@ a {
   background-color: #d7373b;
 }
 
+/*Продукция*/
+
 .products-list {
+  min-height: 450px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 140px;
+
   list-style: none;
+
+}
+
+.products-item {
+  width: 300px;
+  margin-right: 100px;
+
 }
 
 .products-list h3 {
@@ -145,6 +213,25 @@ a {
 
 /*О дизайн-студии «Нёрдс»*/
 
+.studio {
+  display: flex;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  margin-left: 140px;
+}
+
+.studio-article {
+  width: 660px;
+  margin-top: 20px;
+}
+
+.studio-figures {
+  width: 360px;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+
 .studio-title {
   font-size: 45px;
   line-height: 45px;
@@ -192,6 +279,23 @@ a {
 .studio-text span {
   font-size: 24px;
   line-height: 10px;
+}
+
+/*Лого партнеров*/
+
+.partners-logo {
+  min-height: 200px;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 86px;
+  padding: 0;
+
+}
+
+.partners-logo li {
+  display: inline-block;
+  margin-left: 85px;
+  margin-top: 60px;
 }
 
 /*Catalog.html*/
@@ -416,7 +520,30 @@ a {
 
 /*Контактная информация*/
 
+.contacts {
+  position: relative;
+  width: 1440px;
+  height: 416px;
+}
+
+.contacts-map {
+  margin: 0;
+  padding: 0;
+  margin-top: 67px;
+
+}
+
 .contacts-text {
+ position: absolute;
+ margin: 0;
+ padding: 0;
+ width: 320px;
+ height: 310px;
+ top: 55px;
+ left: 140px;
+ text-align: center;
+ vertical-align: middle;
+
   background-color: #ffffff;
 }
 
@@ -450,7 +577,26 @@ a {
     border: none;
   }
 
+/*футер*/
 
+.main-footer {
+  display: flex;
+  align-items: center;
+  min-height: 217px;
+  margin: 0;
+  padding: 0;
+  margin-left: 200px;
+}
+
+.footer-social li {
+  display: inline;
+  }
+
+.footer-slogan {
+  width: 550px;
+  margin-left: 235px;
+
+}
 
 .main-footer p {
   font-size: 16px;

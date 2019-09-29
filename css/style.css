@@ -301,15 +301,69 @@ a {
   margin-top: 60px;
 }
 
-/*Catalog.html*/
+/*CATALOG.html*/
+
+.inner-page {
+
+  /*временно*/
+  background: url("../img/nerds-catalog.jpg") no-repeat 0 0;
+}
+
+.inner-container {
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  width: 1200px;
+
+
+  /*временно*/
+  outline: 1px solid blue;
+}
 
 .page-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 70px;
+
+  /*временно*/
+  outline: 1px solid grey;
+}
+
+.page-title h1 {
   font-size: 55px;
   line-height: 55px;
+  padding-top: 40px;
+  margin-left: 40px;
   text-align: center;
   color: #000000;
+}
 
-  background-color: #eeeeee;
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+  /*временно*/
+  outline: 1px solid green;
+}
+
+.filters {
+  width: 280px;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-left: 20px;
+
+  /*временно*/
+  outline: 1px solid green;
+}
+
+.sort {
+  min-height: 50px;
+  margin-left: 20px;
+  /*временно*/
+  outline: 1px solid green;
+}
+
+.sort-list li {
+  display: inline;
 }
 
 .filter fieldset {
@@ -443,6 +497,40 @@ a {
   list-style: none;
 }
 
+.gallery-container {
+  width: 760px;
+  margin: 0;
+  padding: 0;
+  margin-top: 135px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  list-style: none;
+
+  /* Временно для сетки */
+  outline: 1px solid yellow;
+}
+
+.gallery-item {
+  width: 360px;
+  margin: 0;
+  padding-bottom: 0;
+  margin-bottom: 35px;
+  padding-top: 40px;
+  /*временно*/
+  outline: 1px solid red;
+
+}
+
+.gallery-item:nth-child(2n) {
+  margin-left: 40px;
+}
+
 .gallery-about {
   background-color: #eeeeee;
 }
@@ -494,8 +582,19 @@ a {
 /*Пагинация*/
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
+
+  /* Временно для сетки */
+  min-height: 50px;
 }
+
+.pagination-list li {
+  display: inline;
+}
+
 
 .pagination-item a {
   font-size: 16px;
@@ -533,7 +632,7 @@ a {
 .contacts-map {
   margin: 0;
   padding: 0;
-  margin-top: 67px;
+  margin-top: 50px;
 
 }
 

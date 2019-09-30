@@ -9,77 +9,115 @@ body {
   color: #283136;
 }
 
-.main-page {
-  background: url("../img/nerds-index.jpg") no-repeat 0 0;
-}
-
 a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-page {
+  background: url("../img/nerds-index.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  /*временно*/
+  outline: 1px solid black;
+}
+
 .main-navigation {
-  margin: 0;
-  padding: 0;
   display: flex;
+  margin-top: 50px;
 
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
 
-  /*background-color: #eeeeee;*/
-
+    /*background-color: #eeeeee;*/
 }
 
 .logo {
   width: 160px;
-  height: 65px;
-  margin-top: 50px;
-  margin-left: 140px;
+
+  /*временно*/
+  outline: 1px solid yellow;
 }
 
-.container {
+.nav-container {
   display: flex;
-  justify-content: space-between;
   width: 800px;
-  margin-top: 75px;
   margin-left: 200px;
+
+  /*временно*/
+  outline: 1px solid red;
 }
 
 .site-navigation {
-  min-width: 450px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
 
   list-style: none;
+
+  /*временно*/
+  outline: 1px solid green;
 }
 
-.site-navigation li {
-  display: inline;
-  margin-right: 43px;
-}
-
-.recycle {
-  width: 150px;
-  margin: 0px;
-  padding-left: 75px;
+.user-navigation {
+  display: flex;
+  width: 160px;
 
   list-style: none;
+
+  /*временно*/
+  outline: 1px solid blue;
 }
 
+/*
+.user-navigation .recycle {
+  position: relative;
+  padding-left: 85px;
+}
+
+.recycle::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 45px;
+
+
+  width: 15px;
+  height: 15px;
+
+  background: url("../img/cart-icon.svg") no-repeat 0 0;
+}
+*/
 
 .site-navigation a,
-.recycle a {
+.user-navigation a {
+  display: block;
+  padding-right: 45px;
+  padding-left: 1px;
+  vertical-align: middle;
   color: #000000;
 }
 
 .site-navigation a:hover,
-.recycle a:hover {
+.user-navigation a:hover {
   color: #fb565a;
 }
 
 .site-navigation a:active,
-.recycle a:active {
+.user-navigation a:active {
   color: #000000;
   opacity: 0.5;
 }
@@ -101,8 +139,6 @@ a {
 }
 
 .slider-description {
-  margin-left: 140px;
-
   order: -1;
 
 }
@@ -152,7 +188,6 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 140px;
 
   list-style: none;
 
@@ -306,18 +341,7 @@ a {
 .inner-page {
 
   /*временно*/
-  background: url("../img/nerds-catalog.jpg") no-repeat 0 0;
-}
-
-.inner-container {
-  margin: 0;
-  padding: 0;
-  margin-left: 100px;
-  width: 1200px;
-
-
-  /*временно*/
-  outline: 1px solid blue;
+  background: url("../img/nerds-catalog.jpg") no-repeat top center;
 }
 
 .page-title {
@@ -349,7 +373,6 @@ a {
   width: 280px;
   margin-top: 30px;
   padding-top: 20px;
-  margin-left: 20px;
 
   /*временно*/
   outline: 1px solid green;
@@ -357,7 +380,7 @@ a {
 
 .sort {
   min-height: 50px;
-  margin-left: 20px;
+
   /*временно*/
   outline: 1px solid green;
 }
@@ -501,7 +524,7 @@ a {
   width: 760px;
   margin: 0;
   padding: 0;
-  margin-top: 135px;
+  margin-top: 125px;
 }
 
 .gallery-list {
@@ -509,7 +532,7 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 10px;
+
   list-style: none;
 
   /* Временно для сетки */
@@ -518,13 +541,11 @@ a {
 
 .gallery-item {
   width: 360px;
-  margin: 0;
-  padding-bottom: 0;
   margin-bottom: 35px;
   padding-top: 40px;
+
   /*временно*/
   outline: 1px solid red;
-
 }
 
 .gallery-item:nth-child(2n) {
@@ -582,13 +603,10 @@ a {
 /*Пагинация*/
 
 .pagination-list {
-  padding: 0;
-  margin: 0;
-
   list-style: none;
 
   /* Временно для сетки */
-  min-height: 50px;
+  min-height: 55px;
 }
 
 .pagination-list li {
@@ -625,15 +643,11 @@ a {
 
 .contacts {
   position: relative;
-  width: 1440px;
-  height: 416px;
+
 }
 
 .contacts-map {
-  margin: 0;
-  padding: 0;
-  margin-top: 50px;
-
+  margin-top: 25px;
 }
 
 .contacts-text {
@@ -685,10 +699,8 @@ a {
 .main-footer {
   display: flex;
   align-items: center;
-  min-height: 217px;
-  margin: 0;
-  padding: 0;
-  margin-left: 200px;
+  min-height: 200px;
+  margin-top: 20px;
 }
 
 .footer-social li {
@@ -803,19 +815,20 @@ a {
 
 
 
-
-
-
-
-
-
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }

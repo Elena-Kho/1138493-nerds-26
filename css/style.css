@@ -20,7 +20,7 @@ img {
 
 .main-page {
   background: url("../img/nerds-index.jpg") no-repeat top center;
-  background-size: cover;
+
 }
 
 .container {
@@ -81,7 +81,7 @@ img {
   outline: 1px solid blue;
 }
 
-/*
+
 .user-navigation .recycle {
   position: relative;
   padding-left: 85px;
@@ -100,7 +100,6 @@ img {
 
   background: url("../img/cart-icon.svg") no-repeat 0 0;
 }
-*/
 
 .site-navigation a,
 .user-navigation a {
@@ -130,26 +129,18 @@ img {
 /*Слайдеры */
 
 .slider {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  min-height: 405px;
 
-  /*background-color: #eeeeee;*/
-
-}
-
-.slider-description {
-  order: -1;
-
-}
-
-.slider-img {
-  margin-left: 55px;
-
+  /*временно*/
+  outline: 1px solid blue;
 }
 
 .slider .slider-slogan {
   font-size: 55px;
+  min-height: 210px;
+  margin: 0;
+  padding-top: 62px;
+
   line-height: 55px;
   font-weight: 500;
   color: #000000;
@@ -181,22 +172,25 @@ img {
   background-color: #d7373b;
 }
 
+
 /*Продукция*/
 
 .products-list {
-  min-height: 450px;
   display: flex;
+  min-height: 400px;
   margin: 0;
   padding: 0;
+  margin-top: 80px;
 
   list-style: none;
-
 }
 
 .products-item {
   width: 300px;
   margin-right: 100px;
 
+  /*временно*/
+  outline: 1px solid green;
 }
 
 .products-list h3 {
@@ -204,6 +198,14 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.products-list p {
+  font-size: 16px;
+  line-height: 24px;
+
+
+  color: #283136;
 }
 
 .products-list a {
@@ -253,22 +255,24 @@ img {
 
 .studio {
   display: flex;
+  justify-content: space-between;
   min-height: 500px;
-  margin: 0;
-  padding: 0;
-  margin-left: 140px;
+  margin-top: 60px;
 }
 
 .studio-article {
   width: 660px;
-  margin-top: 20px;
+
+  /*временно*/
+  outline: 1px solid yellow;
 }
 
 .studio-figures {
   width: 360px;
-  margin-left: 140px;
-  margin-top: 20px;
-}
+
+  /*временно*/
+  outline: 1px solid yellow;
+  }
 
 .studio-title {
   font-size: 45px;
@@ -322,19 +326,20 @@ img {
 /*Лого партнеров*/
 
 .partners-logo {
-  min-height: 200px;
-  margin: 0;
-  margin-top: 20px;
-  margin-left: 86px;
-  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100px;
+  margin-top: 10px;
+  padding-top: 50px;
 
+  /*временно*/
+  outline: 1px solid red;
 }
 
 .partners-logo li {
-  display: inline-block;
-  margin-left: 85px;
-  margin-top: 60px;
+  list-style: none;
 }
+
 
 /*CATALOG.html*/
 
@@ -345,8 +350,6 @@ img {
 }
 
 .page-title {
-  margin: 0;
-  padding: 0;
   padding-bottom: 70px;
 
   /*временно*/
@@ -356,8 +359,8 @@ img {
 .page-title h1 {
   font-size: 55px;
   line-height: 55px;
-  padding-top: 40px;
-  margin-left: 40px;
+  padding-top: 30px;
+
   text-align: center;
   color: #000000;
 }
@@ -370,9 +373,10 @@ img {
 }
 
 .filters {
-  width: 280px;
-  margin-top: 30px;
-  padding-top: 20px;
+  width: 260px;
+  margin: 0;
+  padding: 0;
+
 
   /*временно*/
   outline: 1px solid green;
@@ -408,6 +412,16 @@ img {
     list-style: none;
 }
 
+.filter-price {
+  min-height: 210px;
+  margin: 0;
+  padding: 0;
+  margin-top: 55px;
+
+  /*временно*/
+  outline: 1px solid yellow;
+}
+
 .filter-price .range {
   text-align: center;
   vertical-align: middle;
@@ -433,6 +447,25 @@ img {
   background-color: #eeeeee;
   border: none;
   }
+
+.filter-grid {
+  margin: 0;
+  padding: 0;
+  margin-top: 55px;
+
+  /*временно*/
+  outline: 1px solid yellow;
+}
+
+.filter-features {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+
+
+  /*временно*/
+  outline: 1px solid yellow;
+}
 
 .filter-grid input:hover + label,
 .filter-grid input:focus + label,
@@ -483,6 +516,24 @@ img {
   background-color: #d5d5d5;
 }
 
+.filters-container {
+  position: relative;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  width: 760px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  top: 0;
+  left: 400px;
+}
+
+
 .sort h2 {
   font-size: 18px;
   line-height: 18px;
@@ -492,6 +543,7 @@ img {
 }
 
 .sort ul {
+  display: flex;
   list-style: none;
 }
 
@@ -524,7 +576,7 @@ img {
   width: 760px;
   margin: 0;
   padding: 0;
-  margin-top: 125px;
+  margin-top: 135px;
 }
 
 .gallery-list {
@@ -542,10 +594,13 @@ img {
 .gallery-item {
   width: 360px;
   margin-bottom: 35px;
-  padding-top: 40px;
-
+  padding-top: 39px;
   /*временно*/
   outline: 1px solid red;
+}
+
+.gallery-item img {
+  display: block;
 }
 
 .gallery-item:nth-child(2n) {
@@ -647,7 +702,18 @@ img {
 }
 
 .contacts-map {
-  margin-top: 25px;
+  min-height: 417px;
+  margin-top: 110px;
+}
+
+.inner-map {
+  min-height: 417px;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+
+  /*Временно*/
+  outline: 1px solid red;
 }
 
 .contacts-text {
@@ -700,7 +766,6 @@ img {
   display: flex;
   align-items: center;
   min-height: 200px;
-  margin-top: 20px;
 }
 
 .footer-social li {

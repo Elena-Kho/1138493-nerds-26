@@ -10,7 +10,7 @@
   <body class="inner-page">
     <header>
       <nav class="main-navigation container">
-        <a href="index.html" class="logo">
+        <a class="logo" href="index.html" aria-label="Логотип дизайн-студии «Нёрдс»">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <div class="nav-container">
@@ -39,15 +39,19 @@
           <form class="filter" action="#" method="get">
             <fieldset class="filter-price">
               <legend>Стоимость:</legend>
-              <input type="range" min="0" max="1500" step="100"><br>
-              <label>
-                От
-                <input type="text" name="from" placeholder="0">
-              </label>
-              <label>
-                До
-                <input type="text" name="to" placeholder="15 000">
-              </label>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-grid">
               <legend>Cетка:</legend>

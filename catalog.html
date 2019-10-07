@@ -29,8 +29,10 @@
     </nav>
   </header>
   <main>
-    <div class="page-title container">
-      <h1>Магазин готовых шаблонов</h1>
+    <div class="top-background">
+      <div class="page-title container">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
     </div>
     <div class="catalog-columns container">
       <div class="filters-container">
@@ -103,9 +105,9 @@
           <ul class="sort-list">
             <li><a href="">По цене</a></li>
             <li><a href="">По типу</a></li>
-            <li><a href="">По названию</a></li>
-            <li class="visually-hidden"><a href="" aria-label="По убыванию">По убыванию</a></li>
-            <li class="visually-hidden"><a href="" aria-label="По возрастанию">По возрастанию</a></li>
+            <li><a class="sort-item" href="">По названию</a></li>
+            <li><a class="down-dir" href="" aria-label="По убыванию"></a></li>
+            <li><a class="up-dir" href="" aria-label="По возрастанию"></a></li>
           </ul>
         </section>
       </div>
@@ -127,60 +129,60 @@
             </li>
             <li class="gallery-item">
               <img src="img/img-pink-360x576.jpg" width="360" height="576" alt="Скриншот сайта Pink">
-              <div class="gallery-about visually-hidden">
+              <div class="gallery-about">
                 <h3>
                     <a class="gallery-title" href="#">Pink App</a>
                 </h3>
                 <p class="gallery-description">
-                  Продуктовый лендинг приложения для iOS и Android
+                  Продуктовый лендинг<br> приложения для iOS и Android
                 </p>
                 <a class="gallery-price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery-item">
               <img src="img/img-barbershop-360x576.jpg" width="360" height="576" alt="Скриншот сайта Barbershop «Borodinski»">
-              <div class="gallery-about visually-hidden">
+              <div class="gallery-about">
                 <h3>
                   <a class="gallery-title" href="#">Barbershop</a>
                 </h3>
                 <p class="gallery-description">
-                  Сайт салона красоты. Для мужчин, да.
+                  Сайт салона красоты.<br> Для мужчин, да.
                 </p>
                 <a class="gallery-price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery-item">
               <img src="img/img-mishka-360x576.jpg" width="360" height="576" alt="Скриншот сайта Mishka">
-              <div class="gallery-about visually-hidden">
+              <div class="gallery-about">
                 <h3>
                   <a class="gallery-title" href="#">Mishka</a>
                 </h3>
                 <p class="gallery-description">
-                  Текстовый блок карточки товара
+                  Интернет-магазин<br> вязаных игрушек.
                 </p>
-                <a class="gallery-price" href="#">Цена руб.</a>
+                <a class="gallery-price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery-item">
               <img src="img/img-aplus-360x576.jpg" width="360" height="576" alt="Скриншот сайта A+">
-              <div class="gallery-about visually-hidden">
+              <div class="gallery-about">
                 <h3>
                   <a class="gallery-title" href="#">A Plus</a>
                 </h3>
                 <p class="gallery-description">
-                  Лендинг курсов повышения квалификации
+                  Лендинг курсов повышения<br> квалификации
                 </p>
                   <a class="gallery-price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="gallery-item">
               <img src="img/img-kvast-360x576.jpg" width="360" height="576" alt="Скриншот сайта Кваст">
-              <div class="gallery-about visually-hidden">
+              <div class="gallery-about">
                 <h3>
                   <a class="gallery-title" href="#">Кваст</a>
                 </h3>
                 <p class="gallery-description">
-                  Промо-сайт производителя крафтового кваса
+                  Промо-сайт производителя<br> крафтового кваса
                 </p>
                 <a class="gallery-price" href="#">9 900 руб.</a>
               </div>
@@ -195,7 +197,7 @@
           </section>
         </div>
       </div>
-      <section class="contacts inner-contacts">
+      <section class="inner-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts-map">
           <a href="#">
@@ -219,8 +221,7 @@
         </div>
       </section>
     </main>
-
-    <footer class="main-footer container inner-footer">
+    <footer class="inner-footer container">
       <ul class="footer-social">
         <li>
           <a class="social-button vkontakte" href="#" aria-label="«Нёрдс» во ВКонтакте"></a>
@@ -243,7 +244,7 @@
       <form class="writeus-form" action="#" method="post">
         <p class="form-name">
           <label for="name">Ваше имя:</label><br>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name" required>
+          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
         </p>
         <p class="form-email">
           <label for="email">Ваш e-mail:</label><br>

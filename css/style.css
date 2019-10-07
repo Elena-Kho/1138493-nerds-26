@@ -19,7 +19,14 @@ img {
 }
 
 .main-page {
-  background: url("../img/nerds-index.jpg") no-repeat top center;
+ background: url("../img/nerds-index.jpg") no-repeat top center;
+}
+
+.main-page header,
+.inner-page header,
+.top-background {
+
+background-color: #eeeeee;
 }
 
 .container {
@@ -31,14 +38,12 @@ img {
 
 .main-navigation {
   display: flex;
-  margin-top: 50px;
+  padding-top: 50px;
 
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
-
-    /*background-color: #eeeeee;*/
 }
 
 .logo {
@@ -138,8 +143,6 @@ img {
 /*Слайдеры */
 .slider {
   min-height: 420px;
-
-  background-color: #eeeeee;
 
 }
 
@@ -430,7 +433,6 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-
 }
 
 .studio-point {
@@ -571,38 +573,36 @@ img {
   padding-left: 60px;
 }
 
-.partners-logo {
+.partners-logo img {
   opacity: 0.2;
 }
 
-.partners-logo:hover {
+.partners-logo:hover img {
   opacity: 1;
 }
 
-.partners-logo:active {
+.partners-logo:active img {
   opacity: 0.1;
 }
 
 
-
-
-/*CATALOG.html*/
+/*Каталог*/
 
 .inner-page {
-    /*
-    background: url("../img/nerds-catalog.jpg") no-repeat top center;
-    */
+/*background: url("../img/nerds-catalog.jpg") no-repeat top center;*/
 }
 
 .page-title {
-  padding-bottom: 70px;
+  padding-top: 67px;
+  padding-bottom: 107px;
 
 }
 
 .page-title h1 {
+  margin: 0;
+  padding: 0;
   font-size: 55px;
   line-height: 55px;
-  padding-top: 30px;
 
   text-align: center;
   color: #000000;
@@ -894,31 +894,73 @@ img {
   color: #000000;
 }
 
-.sort ul {
+.sort-list {
   display: flex;
+  width: 360px;
+
   list-style: none;
+
 }
 
-.sort a {
+.sort-list a {
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.sort a:hover {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.sort a:active {
-  font-size: 14px;
-  line-height: 18px;
+  margin-right: 25px;
   text-transform: uppercase;
   color: #000000;
+  opacity: 0.3;
+
 }
+
+.down-dir {
+  position: relative;
+}
+
+.down-dir::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 22px;
+
+  width: 11px;
+  height: 10px;
+
+  background: url("../img/icon-down-dir.svg") no-repeat 0 0;
+}
+
+.up-dir {
+  position: relative;
+}
+
+.up-dir::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 26px;
+
+  width: 11px;
+  height: 10px;
+
+  background: url("../img/icon-up-dir.svg") no-repeat 0 0;
+}
+
+.sort-list a:hover {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.sort-list a:active {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/*Галерея*/
 
 .gallery ul {
   list-style: none;
@@ -929,6 +971,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 135px;
+
 }
 
 .gallery-list {
@@ -942,17 +985,31 @@ img {
 
 .gallery-item {
   position: relative;
-  width: 360px;
+  width: 356px;
   margin-bottom: 35px;
   padding-top: 39px;
-
-  background: url("../img/browser.svg") no-repeat 0 0;
-  opacity: 0.1;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px 5px 0 0;
 }
 
 .gallery-item img {
   display: block;
+  width: 356px;
+  height: auto;
+}
 
+.gallery-item::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 356px;
+  height: 40px;
+
+  background: url("../img/browser.svg") no-repeat 0 0;
+  opacity: 0.12;
 }
 
 .gallery-item:nth-child(2n) {
@@ -960,15 +1017,24 @@ img {
 }
 
 .gallery-about {
+  display: none;
   position: absolute;
   bottom: 0;
-  width: 360px;
+  width: 356px;
   min-height: 233px;
 
   text-align: center;
 
   background-color: #eeeeee;
   }
+
+.gallery-item:hover .gallery-about {
+  display: block;
+}
+
+.gallery-item:hover::before {
+  opacity: 1;
+}
 
 .gallery-about h3 {
   margin: 0;
@@ -1096,7 +1162,10 @@ img {
 }
 
 .inner-contacts {
-  margin-top: 50px;
+  position: relative;
+  min-height: 417px;
+  margin-top: 60px;
+
 }
 
 .contacts-text {
@@ -1108,6 +1177,7 @@ img {
  text-align: left;
 
  background-color: #ffffff;
+
 }
 
 .contacts-name {
@@ -1119,11 +1189,13 @@ img {
 }
 
 .contacts-address {
+  margin-top: 20px;
+
   font-size: 16px;
   line-height: 18px;
-  padding-top: 5px;
+
   color: #666666;
-  }
+}
 
 .contacts-address a {
   text-decoration: none;
@@ -1133,7 +1205,7 @@ img {
 .contacts-button {
   display: block;
   width: 220px;
-  margin-top: 35px;
+  margin-top: 38px;
   margin-bottom: 50px;
   padding: 15px 0;
 
@@ -1171,7 +1243,9 @@ img {
 }
 
 .inner-footer {
-  margin-top: 5px;
+  display: flex;
+  min-height: 210px;
+  margin-top: 10px;
 }
 
 .footer-social {
@@ -1198,14 +1272,16 @@ img {
   color: #444444;
 }
 
-.main-footer span {
+.main-footer span,
+.inner-footer span {
   font-size: 36px;
   font-weight: 500;
   line-height: 60px;
   color: #000000;
 }
 
-.main-footer ul {
+.main-footer ul,
+.inner-footer ul {
   list-style: none;
 }
 
@@ -1217,20 +1293,22 @@ img {
   width: 80px;
   height: 80px;
 
-  background-color: #e1e1e1;
   border-radius: 50%;
 }
 
 .vkontakte {
   background: url("../img/vk-icon.svg") no-repeat 50% 50%;
+  background-color: #e1e1e1;
 }
 
 .facebook {
   background: url("../img/fb-icon.svg") no-repeat 50% 50%;
+  background-color: #e1e1e1;
 }
 
 .instagram {
   background: url("../img/insta-icon.svg") no-repeat 50% 50%;
+  background-color: #e1e1e1;
 }
 
 .social-button:hover {

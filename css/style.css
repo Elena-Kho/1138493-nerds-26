@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -19,13 +19,19 @@ img {
 }
 
 .main-page {
- background: url("../img/nerds-index.jpg") no-repeat top center;
+  /*background: url("../img/nerds-index.jpg") no-repeat top center;*/
 }
+
+.main-page,
+.inner-page {
+  min-width: 1200px;
+}
+
 
 .main-page header,
 .inner-page header,
-.top-background {
-
+.slider,
+.grey-background {
 background-color: #eeeeee;
 }
 
@@ -38,16 +44,12 @@ background-color: #eeeeee;
 
 .main-navigation {
   display: flex;
+  justify-content: space-between;
   padding-top: 50px;
-
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #000000;
 }
 
-.logo {
-  width: 160px;
+.logo img {
+  display: block;
 }
 
 .logo:hover img {
@@ -64,7 +66,11 @@ background-color: #eeeeee;
   justify-content: space-between;
   align-items: baseline;
 
-  margin-left: 200px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
 
 }
 
@@ -74,35 +80,39 @@ background-color: #eeeeee;
   width: 640px;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
-
+  padding-top: 25px;
   list-style: none;
 
 }
 
-.site-navigation li{
-  margin-left: 1px;
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  vertical-align: middle;
+
 }
 
 .current {
   width: 75px;
   height: 34px;
-  margin-left: -1px;
-  margin-right: 45px;
+
+  margin-right: 50px;
+
   border-bottom: 2px solid #fb565a;
 }
 
 .user-navigation {
   display: flex;
   width: 160px;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
-
 }
 
-
-.user-navigation .recycle {
+.recycle {
   position: relative;
+  padding: 0;
   padding-left: 85px;
 }
 
@@ -112,7 +122,6 @@ background-color: #eeeeee;
   position: absolute;
   top: 7px;
   left: 45px;
-
 
   width: 15px;
   height: 15px;
@@ -141,57 +150,59 @@ background-color: #eeeeee;
 
 
 /*Слайдеры */
-.slider {
-  min-height: 420px;
 
-}
+.slide {
+  min-height: 430px;
 
-.slider-description {
-  min-height: 420px;
 }
 
 .slide1 {
   background-image: url("../img/slide1-698x413.png");
   background-repeat: no-repeat;
-  background-position: 430px 7px;
+  background-position: 450px 15px;
 }
 
 .slide2 {
   background-image: url("../img/slide2-663x430.png");
   background-repeat: no-repeat;
-  background-position: 500px 7px;
+  background-position: 510px 0;
 }
 
 .slide3 {
   background-image: url("../img/slide3-759x411.png");
   background-repeat: no-repeat;
-  background-position: 400px 0;
+  background-position: 420px 0;
+}
+
+.slide2,
+.slide3 {
+  display: none;
 }
 
 .slider-slogan {
   font-size: 55px;
   margin: 0;
-  padding-top: 66px;
+  padding-top: 77px;
 
   line-height: 55px;
   font-weight: 500;
   color: #000000;
 }
 
-.slider .slider-text {
+.slider-text {
   margin: 0;
   padding: 0;
   margin-top: 28px;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: #283136;
 }
 
-.slider .slider-button {
+.slider-button {
   display: block;
-  width: 240px;
+  width: 230px;
   margin-top: 40px;
-  padding: 15px 0;
+  padding: 15px 5px;
 
   font-size: 16px;
   line-height: 18px;
@@ -205,11 +216,11 @@ background-color: #eeeeee;
   border: none;
 }
 
-.slider .slider-button:hover {
+.slider-button:hover {
   background-color: #e74246;
 }
 
-.slider .slider-button:active {
+.slider-button:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
@@ -221,36 +232,51 @@ background-color: #eeeeee;
 
 .products-list {
   display: flex;
-  justify-content: space-between;
-  min-height: 400px;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
-  margin-top: 80px;
-  margin-right: 60px;
 
   list-style: none;
+
 }
 
 .products-item {
+  display: block;
   width: 300px;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+  margin-top: 80px;
+  padding-bottom: 55px;
+
+  background-size: 300px 146px;
 
 }
 
 .websites {
-  background: url("../img/illustration-1-300x146.png") no-repeat 0 0;
+  background: url("../img//illustration-1-300x146.png") no-repeat 0 0;
+  background-size: 300px 146px;
 }
 
 .apps {
   background: url("../img/illustration-2-300x146.png") no-repeat 0 0;
+  background-size: 300px 146px;
 }
 
 .presentations {
   background: url("../img/illustration-3-300x146.png") no-repeat 0 0;
+  background-size: 300px 146px;
+}
+
+.products-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .products-list h3 {
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   margin: 0;
   padding: 0;
   margin-top: 170px;
@@ -270,12 +296,13 @@ background-color: #eeeeee;
 
 .products-button {
   display: block;
-  width: 160px;
-  padding: 15px 0;
+  width: 150px;
+  padding: 15px 5px;
   margin-top: 34px;
 
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -350,7 +377,7 @@ background-color: #eeeeee;
 }
 
 .line3 {
-  margin-top: 38px;
+  margin-top: 36px;
 }
 
 /*О дизайн-студии «Нёрдс»*/
@@ -413,7 +440,7 @@ background-color: #eeeeee;
 .subtitle2 {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-left: 17px;
 
   font-size: 16px;
@@ -427,30 +454,36 @@ background-color: #eeeeee;
 .studio-products {
   margin: 0;
   padding: 0;
-  margin-top: 25px;
-  margin-left: 35px;
+  padding-left: 35px;
 
   font-size: 16px;
   line-height: 24px;
   color: #283136;
+
 }
 
 .studio-point {
   position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
 }
 
 
 .studio-point::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 35px;
   left: -35px;
   width: 25px;
   height: 2px;
   background-color: #fb565a;
+
 }
 
 .studio-img {
+  width: 360px;
+  height: 208px;
   margin: 0;
   padding: 0;
   margin-top: 12px;
@@ -506,6 +539,7 @@ background-color: #eeeeee;
 
 .partners-block {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 48px;
   padding: 0;
 
@@ -593,7 +627,7 @@ background-color: #eeeeee;
 }
 
 .page-title {
-  padding-top: 67px;
+  padding-top: 77px;
   padding-bottom: 107px;
 
 }
@@ -603,6 +637,7 @@ background-color: #eeeeee;
   padding: 0;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 
   text-align: center;
   color: #000000;
@@ -629,7 +664,7 @@ background-color: #eeeeee;
 
 .filter legend {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
@@ -838,10 +873,10 @@ background-color: #eeeeee;
 
 .filter-button {
   display: block;
-  width: 260px;
+  width: 250px;
   height: 50px;
   margin-top: 40px;
-  padding: 15px 0;
+  padding: 15px 5px;
 
   font-size: 16px;
   line-height: 18px;
@@ -889,13 +924,14 @@ background-color: #eeeeee;
 .sort h2 {
   font-size: 18px;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
 
 .sort-list {
   display: flex;
+  flex-wrap: wrap;
   width: 360px;
 
   list-style: none;
@@ -985,17 +1021,19 @@ background-color: #eeeeee;
 
 .gallery-item {
   position: relative;
-  width: 356px;
-  margin-bottom: 35px;
-  padding-top: 39px;
-  border: 2px solid #e5e5e5;
-  border-radius: 5px 5px 0 0;
+  width: 360px;
+  margin-bottom: 36px;
+  padding-top: 40px;
+
 }
 
 .gallery-item img {
   display: block;
   width: 356px;
   height: auto;
+
+  border: 2px solid #e5e5e5;
+
 }
 
 .gallery-item::before {
@@ -1005,7 +1043,7 @@ background-color: #eeeeee;
   top: 0;
   left: 0;
 
-  width: 356px;
+  width: 360px;
   height: 40px;
 
   background: url("../img/browser.svg") no-repeat 0 0;
@@ -1020,7 +1058,7 @@ background-color: #eeeeee;
   display: none;
   position: absolute;
   bottom: 0;
-  width: 356px;
+  width: 360px;
   min-height: 233px;
 
   text-align: center;
@@ -1070,9 +1108,9 @@ background-color: #eeeeee;
 
 .gallery-price {
   display: block;
-  width: 200px;
+  width: 190px;
   margin: 30px auto;
-  padding: 15px 0;
+  padding: 15px 5px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1156,24 +1194,32 @@ background-color: #eeeeee;
 
 .contacts {
   position: relative;
-  min-height: 417px;
-  margin-top: 80px;
+  padding-top: 98px;
 
 }
 
 .inner-contacts {
   position: relative;
-  min-height: 417px;
-  margin-top: 60px;
+  padding-top: 90px;
+
+}
+
+.contacts-map img {
+  display: block;
+  width: 100%;
 
 }
 
 .contacts-text {
  position: absolute;
- top: 50px;
+ top: 50%;
  width: 270px;
+ height: 310px;
+ margin-top: -125px;
+
  padding-top: 34px;
  padding-left: 50px;
+
  text-align: left;
 
  background-color: #ffffff;
@@ -1204,13 +1250,14 @@ background-color: #eeeeee;
 
 .contacts-button {
   display: block;
-  width: 220px;
+  width: 210px;
   margin-top: 38px;
   margin-bottom: 50px;
-  padding: 15px 0;
+  padding: 15px 5px;
 
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -1238,7 +1285,7 @@ background-color: #eeeeee;
 .main-footer {
   display: flex;
   min-height: 210px;
-  margin-top: 7px;
+  padding-top: 10px;
 
 }
 
@@ -1250,6 +1297,7 @@ background-color: #eeeeee;
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   width: 260px;
   justify-content: space-between;
   margin: 0;
@@ -1258,24 +1306,23 @@ background-color: #eeeeee;
   }
 
 .footer-slogan {
+  display: block;
   width: 550px;
   margin: 0;
   padding: 0;
   margin-left: 140px;
   margin-top: 53px;
 
-}
-
-.footer-slogan {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+
 }
 
 .main-footer span,
 .inner-footer span {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 60px;
   color: #000000;
 }
@@ -1286,29 +1333,77 @@ background-color: #eeeeee;
 }
 
 .social-button {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80px;
   height: 80px;
-
+  margin-bottom: 10px;
   border-radius: 50%;
+  background-color: #e1e1e1;
 }
 
 .vkontakte {
-  background: url("../img/vk-icon.svg") no-repeat 50% 50%;
-  background-color: #e1e1e1;
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+.vkontakte::before {
+  content: "";
+
+  position: absolute;
+  top: 32px;
+  left: 27px;
+
+  width: 26px;
+  height: 15px;
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.vkontakte:active::before,
+.facebook:active::before,
+.instagram:active::before {
+  opacity: 0.3;
 }
 
 .facebook {
-  background: url("../img/fb-icon.svg") no-repeat 50% 50%;
-  background-color: #e1e1e1;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.facebook::before {
+  content: "";
+
+  position: absolute;
+  top: 29px;
+  left: 34px;
+
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .instagram {
-  background: url("../img/insta-icon.svg") no-repeat 50% 50%;
-  background-color: #e1e1e1;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.instagram::before {
+  content: "";
+
+  position: absolute;
+  top: 29px;
+  left: 30px;
+
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .social-button:hover {
@@ -1319,6 +1414,7 @@ background-color: #eeeeee;
   background-color: #d7373b;
   box-shadow: 0 3px rgba(193, 49, 53, 1) inset;
 }
+
 
 /*Напишите нам*/
 
@@ -1350,8 +1446,6 @@ background-color: #eeeeee;
   background-color: transparent;
   outline: none;
 }
-
-
 
 .modal-close {
   position: absolute;
@@ -1483,8 +1577,8 @@ padding: 0;
 
  .writeus-form .button {
    display: block;
-   width: 260px;
-   height: 50px;
+   width: 250px;
+   padding: 15px 5px;
 
    margin-top: 48px;
 

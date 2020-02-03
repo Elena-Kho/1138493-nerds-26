@@ -15,7 +15,7 @@
         </a>
         <div class="nav-container">
           <ul class="site-navigation">
-            <li><a href="#">Студия</a></li>
+            <li class="current-index"><a>Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
@@ -210,19 +210,20 @@
       <form class="writeus-form" action="#" method="post">
         <p class="form-name">
           <label for="name">Ваше имя:</label><br>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия" id="name">
+          <input type="text" name="username" value="" placeholder="Имя Фамилия" id="name" required>
         </p>
         <p class="form-email">
           <label for="email">Ваш e-mail:</label><br>
-          <input type="email" name="email" value="" placeholder="email@example.com" id="email">
+          <input type="email" name="usermail" value="" placeholder="email@example.com" id="email" required>
         </p>
         <p class="form-text">
           <label for="message">Текст письма:</label><br>
-          <textarea name="message" rows="5" placeholder="В свободной форме" id="message"></textarea>
+          <textarea name="message" rows="5" placeholder="В свободной форме" id="message" required></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="js/popup.js"></script>
   </body>
 </html>

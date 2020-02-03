@@ -85,8 +85,15 @@ background-color: #eeeeee;
   vertical-align: middle;
 }
 
-.current {
+.current-catalog {
   width: 75px;
+  height: 34px;
+  margin-right: 50px;
+  border-bottom: 2px solid #fb565a;
+}
+
+.current-index {
+  width: 60px;
   height: 34px;
   margin-right: 50px;
   border-bottom: 2px solid #fb565a;
@@ -1362,16 +1369,20 @@ background-color: #eeeeee;
 
 .modal {
   position: fixed;
+  display: none;
   z-index: 100;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-writeus {
-  top: 0;
+  top: 10%;
   left: 50%;
-  display: none;
   width: 760px;
   padding: 60px 100px;
   margin-left: -480px;
@@ -1499,7 +1510,8 @@ textarea:focus {
    border: 2px solid  #000000;
  }
 
- .writeus-form input:invalid {
+ .writeus-form input:invalid,
+ .writeus-form textarea:invalid {
    color: #e74246;
    border: 2px solid  #e74246;
  }

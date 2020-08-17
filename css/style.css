@@ -717,12 +717,12 @@ background-color: #eeeeee;
 
 .range-controls {
   position: relative;
-  height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  height: 2px;
+  margin-bottom: 50px;
+  margin-top: 50px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color: #d7dcde;
   border-radius: 5px;
 }
 
@@ -739,12 +739,12 @@ background-color: #eeeeee;
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: -9px;
   left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
+  border: 8px solid #f1f1f1;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
